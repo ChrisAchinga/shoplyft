@@ -1,5 +1,9 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
+
+// screens
+import HomeScreen from './screens/HomeScreen'
+
 // styles
 import './App.css'
 
@@ -8,7 +12,7 @@ const App = () => {
     <div>
       <Header />
       <main>
-        HOME PAGE
+        <HomeScreen />
       </main>
       <Footer />
     </div>
