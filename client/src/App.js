@@ -1,29 +1,17 @@
-import { Container } from 'react-bootstrap'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-
-// components
-import Menu from './components/Menu'
 import Footer from './components/Footer'
-
-// pages
-import Home from './pages/Home'
-import About from './pages/About'
-
+import Header from './components/Header'
 // styles
 import './App.css'
 
 const App = () => {
   return (
-    <Router>
-      <Menu />
+    <div>
+      <Header />
       <main>
-        <Container>
-          <Route path='/react-bootstrap-starter' component={Home} exact />
-          <Route path='/react-bootstrap-starter/about' component={About} />
-        </Container>
+        HOME PAGE
       </main>
       <Footer />
-    </Router>
+    </div>
   )
 }
 

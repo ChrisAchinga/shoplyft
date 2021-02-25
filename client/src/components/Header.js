@@ -1,15 +1,21 @@
-import { Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, Row } from 'react-bootstrap'
 
-const Header = (props) => {
-  const description = 'Feel free to clone and start using the template as yours'
+const Header = () => {
   return (
-    <Container>
-      <div className='starter-template text-center mt-5'>
-        <h1>{props.pageTitle} Page</h1>
-        <p className='lead text-capitalize'>{props.pageDescription}</p>
-        <p className='lead text-capitalize'>{description}</p>
-      </div>
-    </Container>
+    <header>
+      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+        <Container>
+          <Navbar.Brand href='/'>ShopLyfter</Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='mr-auto'>
+              <Nav.Link href='/cart'> <i className='fas fa-shopping-cart'></i> Cart</Nav.Link>
+              <Nav.Link href='/login'> <i className='fas fa-user'></i> Login</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
   )
 }
 
