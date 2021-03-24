@@ -1,11 +1,17 @@
+import { Container, Row, Col } from 'react-bootstrap'
+
 const Footer = () => {
   const year = new Date().getFullYear()
   return (
-    <>
-      <footer className='text-center text-capitalize'>
-        copyright react bootstrap starter &copy; {year}
-      </footer>
-    </>
+    <footer>
+      <Container>
+        <Row>
+          <Col className='text-center py-3'>
+            Copyright &copy; ShopLyft {year}
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   )
 }
 
