@@ -2,10 +2,19 @@
 
 ![logo](react-bootstrap-starter.png)
 
-[Documentation](https://chrisdev.hashnode.dev/react-and-bootstrap-starter-template) | [Live Demo](https://react-bootstrap-temp.netlify.app/)
+[Documentation](https://chrisdev.hashnode.dev/react-and-bootstrap-starter-template)
 
 React Bootstrap Starter is a starter template for react and bootstrap created by [Chris Achinga](http://chrisdev.netlify.app). This theme uses Create React App, react-bootstrap and gh-pages.
 
+## Preview
+
+**Home Page**
+
+![home page preview](home.png)
+
+**About Page**
+
+![about page preview](about.png)
 
 ## Download and Installation
 
@@ -34,6 +43,7 @@ npm start
 - [React](https://reactjs.org/)
 - [Create React App](https://create-react-app.dev/)
 - [react-bootstrap](https://react-bootstrap.github.io/)
+- [gh-pages](https://pages.github.com/)
 
 ## Bugs and Issues
 
@@ -46,6 +56,7 @@ Copyright 2021 Chris Achinga. Code released under the [MIT license](LICENSE).
 ## Status
 
 <div align='center'>
+[![GitHub issues](https://img.shields.io/github/issues/ChrisAchinga/react-bootstrap-starter)](https://github.com/ChrisAchinga/react-bootstrap-starter/issues)
 
 [![GitHub forks](https://img.shields.io/github/forks/ChrisAchinga/react-bootstrap-starter)](https://github.com/ChrisAchinga/react-bootstrap-starter/network)
 

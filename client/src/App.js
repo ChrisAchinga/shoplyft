@@ -1,21 +1,26 @@
+import { Container } from 'react-bootstrap'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+// page components
+import Menu from './components/Menu'
 import Footer from './components/Footer'
-import Header from './components/Header'
 
-// screens
-import HomeScreen from './screens/HomeScreen'
-
-// styles
-import './App.css'
+// pages
+import Home from './pages/Home'
+import About from './pages/About'
 
 const App = () => {
   return (
-    <div>
-      <Header />
+    <Router>
+      <Menu />
       <main>
-        <HomeScreen />
+        <Container>
+          <Route path='/' component={Home} exact />
+          <Route path='/about' component={About} />
+        </Container>
       </main>
       <Footer />
-    </div>
+    </Router>
   )
 }
 
