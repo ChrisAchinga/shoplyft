@@ -4,7 +4,7 @@ import Rating from '../components/Rating'
 import products from '../products'
 
 const Product = ({ match }) => {
-  const product = products.find((p) => p._id == match.params.id)
+  const product = products.find((p) => p._id === match.params.id)
   return (
     <div>
       <Link to='/' className='btn btn-light my-3'>
@@ -50,7 +50,7 @@ const Product = ({ match }) => {
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
-                <Button className='btn-block btn-dark' type='button' disabled={product.countInStock == 0 }>Add To Cart</Button>
+                <Button className='btn-block btn-dark' type='button' disabled={product.countInStock === 0 }>Add To Cart</Button>
               </ListGroup.Item>
             </ListGroup>
           </Card>
