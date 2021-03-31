@@ -26,3 +26,9 @@ yarn-error.log*
 
 .history/
 client/node_modules
+server/bin
+server/include
+server/lib
+server/lib64
+server/share
+server/pyvenv.cfg
